@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="module" src="login.js" defer></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="side-image">
+            <img src="../images/wg2.png" alt="image">
+        </div>
+        
+        <div class="container">
+            
+            <form action="#">
+                <h1>Login</h1>
+
+                <div class="text-box">
+                    <input type="email" id="email" name="username" placeholder="Username">
+                    <i class='bx bx-user'></i>
+                </div>
+
+                <div class="text-box">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <i class='bx bx-lock-alt' ></i>
+                </div>
+
+                <div class="remember-me">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                    <a href="login.js" id="passwordReset">Forgot password</a>
+                </div>
+
+                <div class="input-box">
+                    <button type="submit" class="btn" id="login-button">
+                        Login
+                    </button>
+                </div>
+
+                <div class="register-link">
+                    <p>
+                        Don't have an account?
+                        <a href="../Register_page/register.html">Register now</a>
+                    </p>
+                </div>
+            </form>
+        
+        </div>
+    </div>
+</body>
+</html>
