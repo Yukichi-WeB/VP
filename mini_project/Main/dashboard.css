@@ -159,3 +159,10 @@ textarea {
     border: 1px solid #ccc;
     resize: none;
 }
+
+.display .copy {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(195, 58, 58);
+}

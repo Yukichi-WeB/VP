@@ -34,3 +34,23 @@ connect.addEventListener("click", async function () {
         alert("Failed to connect.");
     }
 });
+
+function copyToClipboard(textareaId) {
+    const textarea = document.getElementById(textareaId);
+    textarea.select();
+    textarea.setSelectionRange(0, 99999); // For mobile devices
+
+    try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+            alert(`Copied from ${textareaId}!`);
+        } else {
+            alert('Failed to copy.');
+        }
+    } catch (err) {
+        console.error('Copy failed:', err);
+    }
+
+    // Optional: deselect after copy
+    window.getSelection().removeAllRanges();
+}

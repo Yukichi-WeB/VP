@@ -38,21 +38,28 @@
             <h1> WIREGUARD </h1>
 
             <div class="display">
-                <!-- Server Side -->
                 <div class="serverSide" id="serverSide">
                     <h4>Server side</h4>
                     <textarea id="serverInfo" rows="10" cols="26" readonly></textarea>
+                    <button onclick="copyToClipboard('serverInfo')" class="copy" id="conf">
+                        Clipboard
+                    </button>
                 </div>
 
-                <!-- Client Side -->
                 <div class="clientSide" id="clientSide">
                     <h4>Client side</h4>
                     <textarea id="clientInfo" rows="10" cols="26" readonly></textarea>
+                    <button onclick="copyToClipboard('clientInfo')" class="copy" id="conf">
+                        Clipboard
+                    </button>
                 </div>
 
                 <div class="conf" id="conf">
                     <h4>.conf Files</h4>
-                    <textarea id="wgConfig" rows="21" cols="58" readonly></textarea>
+                    <textarea id="wgConfig" rows="18" cols="58" readonly></textarea>
+                    <button onclick="copyToClipboard('wgConfig')" class="copy" id="conf">
+                        Clipboard
+                    </button>
                 </div>
                 
             </div>
