@@ -38,7 +38,7 @@ connect.addEventListener("click", async function () {
 function copyToClipboard(textareaId) {
     const textarea = document.getElementById(textareaId);
     textarea.select();
-    textarea.setSelectionRange(0, 99999); // For mobile devices
+    textarea.setSelectionRange(0, 99999);
 
     try {
         const successful = document.execCommand('copy');
@@ -51,6 +51,5 @@ function copyToClipboard(textareaId) {
         console.error('Copy failed:', err);
     }
 
-    // Optional: deselect after copy
     window.getSelection().removeAllRanges();
 }
